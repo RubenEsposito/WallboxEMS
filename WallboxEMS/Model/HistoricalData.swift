@@ -7,15 +7,12 @@
 
 import Foundation
 
-typealias KW = Double
-typealias percent = Double
-
 struct HistoricalData: Codable {
     
-    let buildingConsumption: KW
-    let powerFromGrid: KW
-    let powerFromSolarPanels: KW
-    let powerFromQuasars: KW
+    let buildingConsumption: kW
+    let powerFromGrid: kW
+    let powerFromSolarPanels: kW
+    let powerFromQuasars: kW
     let timeStamp: String
     
     enum CodingKeys: String, CodingKey {
