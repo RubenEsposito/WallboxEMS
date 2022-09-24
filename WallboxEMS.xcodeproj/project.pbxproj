@@ -14,6 +14,8 @@
 		6C794A5228DF37F2001AC1A3 /* WallboxEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */; };
 		6C794A5C28DF37F2001AC1A3 /* WallboxEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */; };
 		6C794A5E28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */; };
+		6C8A9BAC28DF750100A2B382 /* HistoricalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAB28DF750100A2B382 /* HistoricalData.swift */; };
+		6C8A9BAE28DF750D00A2B382 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAD28DF750D00A2B382 /* LiveData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		6C794A5728DF37F2001AC1A3 /* WallboxEMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallboxEMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSUITests.swift; sourceTree = "<group>"; };
 		6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C8A9BAB28DF750100A2B382 /* HistoricalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalData.swift; sourceTree = "<group>"; };
+		6C8A9BAD28DF750D00A2B382 /* LiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */,
 				6C794A4228DF37F1001AC1A3 /* ContentView.swift */,
+				6C8A9BAA28DF746E00A2B382 /* Model */,
 				6C794A4428DF37F2001AC1A3 /* Assets.xcassets */,
 				6C794A4628DF37F2001AC1A3 /* Preview Content */,
 			);
@@ -125,6 +130,15 @@
 				6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */,
 			);
 			path = WallboxEMSUITests;
+			sourceTree = "<group>";
+		};
+		6C8A9BAA28DF746E00A2B382 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C8A9BAB28DF750100A2B382 /* HistoricalData.swift */,
+				6C8A9BAD28DF750D00A2B382 /* LiveData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C794A4328DF37F1001AC1A3 /* ContentView.swift in Sources */,
+				6C8A9BAC28DF750100A2B382 /* HistoricalData.swift in Sources */,
 				6C794A4128DF37F1001AC1A3 /* WallboxEMSApp.swift in Sources */,
+				6C8A9BAE28DF750D00A2B382 /* LiveData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
