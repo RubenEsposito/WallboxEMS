@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C794A4128DF37F1001AC1A3 /* WallboxEMSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */; };
+		6C794A4328DF37F1001AC1A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A4228DF37F1001AC1A3 /* ContentView.swift */; };
+		6C794A4528DF37F2001AC1A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C794A4428DF37F2001AC1A3 /* Assets.xcassets */; };
+		6C794A4828DF37F2001AC1A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */; };
+		6C794A5228DF37F2001AC1A3 /* WallboxEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */; };
+		6C794A5C28DF37F2001AC1A3 /* WallboxEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */; };
+		6C794A5E28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C794A4E28DF37F2001AC1A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C794A3528DF37F1001AC1A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C794A3C28DF37F1001AC1A3;
+			remoteInfo = WallboxEMS;
+		};
+		6C794A5828DF37F2001AC1A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C794A3528DF37F1001AC1A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C794A3C28DF37F1001AC1A3;
+			remoteInfo = WallboxEMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C794A3D28DF37F1001AC1A3 /* WallboxEMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallboxEMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSApp.swift; sourceTree = "<group>"; };
+		6C794A4228DF37F1001AC1A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C794A4428DF37F2001AC1A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C794A4D28DF37F2001AC1A3 /* WallboxEMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallboxEMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSTests.swift; sourceTree = "<group>"; };
+		6C794A5728DF37F2001AC1A3 /* WallboxEMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallboxEMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSUITests.swift; sourceTree = "<group>"; };
+		6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C794A3A28DF37F1001AC1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C794A4A28DF37F2001AC1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C794A5428DF37F2001AC1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C794A3428DF37F1001AC1A3 = {
+			isa = PBXGroup;
+			children = (
+				6C794A3F28DF37F1001AC1A3 /* WallboxEMS */,
+				6C794A5028DF37F2001AC1A3 /* WallboxEMSTests */,
+				6C794A5A28DF37F2001AC1A3 /* WallboxEMSUITests */,
+				6C794A3E28DF37F1001AC1A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C794A3E28DF37F1001AC1A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C794A3D28DF37F1001AC1A3 /* WallboxEMS.app */,
+				6C794A4D28DF37F2001AC1A3 /* WallboxEMSTests.xctest */,
+				6C794A5728DF37F2001AC1A3 /* WallboxEMSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C794A3F28DF37F1001AC1A3 /* WallboxEMS */ = {
+			isa = PBXGroup;
+			children = (
+				6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */,
+				6C794A4228DF37F1001AC1A3 /* ContentView.swift */,
+				6C794A4428DF37F2001AC1A3 /* Assets.xcassets */,
+				6C794A4628DF37F2001AC1A3 /* Preview Content */,
+			);
+			path = WallboxEMS;
+			sourceTree = "<group>";
+		};
+		6C794A4628DF37F2001AC1A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C794A5028DF37F2001AC1A3 /* WallboxEMSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */,
+			);
+			path = WallboxEMSTests;
+			sourceTree = "<group>";
+		};
+		6C794A5A28DF37F2001AC1A3 /* WallboxEMSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */,
+				6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */,
+			);
+			path = WallboxEMSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C794A3C28DF37F1001AC1A3 /* WallboxEMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C794A6128DF37F2001AC1A3 /* Build configuration list for PBXNativeTarget "WallboxEMS" */;
+			buildPhases = (
+				6C794A3928DF37F1001AC1A3 /* Sources */,
+				6C794A3A28DF37F1001AC1A3 /* Frameworks */,
+				6C794A3B28DF37F1001AC1A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallboxEMS;
+			productName = WallboxEMS;
+			productReference = 6C794A3D28DF37F1001AC1A3 /* WallboxEMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C794A4C28DF37F2001AC1A3 /* WallboxEMSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C794A6428DF37F2001AC1A3 /* Build configuration list for PBXNativeTarget "WallboxEMSTests" */;
+			buildPhases = (
+				6C794A4928DF37F2001AC1A3 /* Sources */,
+				6C794A4A28DF37F2001AC1A3 /* Frameworks */,
+				6C794A4B28DF37F2001AC1A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C794A4F28DF37F2001AC1A3 /* PBXTargetDependency */,
+			);
+			name = WallboxEMSTests;
+			productName = WallboxEMSTests;
+			productReference = 6C794A4D28DF37F2001AC1A3 /* WallboxEMSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C794A5628DF37F2001AC1A3 /* WallboxEMSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C794A6728DF37F2001AC1A3 /* Build configuration list for PBXNativeTarget "WallboxEMSUITests" */;
+			buildPhases = (
+				6C794A5328DF37F2001AC1A3 /* Sources */,
+				6C794A5428DF37F2001AC1A3 /* Frameworks */,
+				6C794A5528DF37F2001AC1A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C794A5928DF37F2001AC1A3 /* PBXTargetDependency */,
+			);
+			name = WallboxEMSUITests;
+			productName = WallboxEMSUITests;
+			productReference = 6C794A5728DF37F2001AC1A3 /* WallboxEMSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C794A3528DF37F1001AC1A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6C794A3C28DF37F1001AC1A3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					6C794A4C28DF37F2001AC1A3 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 6C794A3C28DF37F1001AC1A3;
+					};
+					6C794A5628DF37F2001AC1A3 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 6C794A3C28DF37F1001AC1A3;
+					};
+				};
+			};
+			buildConfigurationList = 6C794A3828DF37F1001AC1A3 /* Build configuration list for PBXProject "WallboxEMS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C794A3428DF37F1001AC1A3;
+			productRefGroup = 6C794A3E28DF37F1001AC1A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C794A3C28DF37F1001AC1A3 /* WallboxEMS */,
+				6C794A4C28DF37F2001AC1A3 /* WallboxEMSTests */,
+				6C794A5628DF37F2001AC1A3 /* WallboxEMSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C794A3B28DF37F1001AC1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C794A4828DF37F2001AC1A3 /* Preview Assets.xcassets in Resources */,
+				6C794A4528DF37F2001AC1A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C794A4B28DF37F2001AC1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C794A5528DF37F2001AC1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C794A3928DF37F1001AC1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C794A4328DF37F1001AC1A3 /* ContentView.swift in Sources */,
+				6C794A4128DF37F1001AC1A3 /* WallboxEMSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C794A4928DF37F2001AC1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C794A5228DF37F2001AC1A3 /* WallboxEMSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C794A5328DF37F2001AC1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C794A5E28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift in Sources */,
+				6C794A5C28DF37F2001AC1A3 /* WallboxEMSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C794A4F28DF37F2001AC1A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C794A3C28DF37F1001AC1A3 /* WallboxEMS */;
+			targetProxy = 6C794A4E28DF37F2001AC1A3 /* PBXContainerItemProxy */;
+		};
+		6C794A5928DF37F2001AC1A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C794A3C28DF37F1001AC1A3 /* WallboxEMS */;
+			targetProxy = 6C794A5828DF37F2001AC1A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6C794A5F28DF37F2001AC1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C794A6028DF37F2001AC1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C794A6228DF37F2001AC1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WallboxEMS/Preview Content\"";
+				DEVELOPMENT_TEAM = GF8GF9C4W5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C794A6328DF37F2001AC1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WallboxEMS/Preview Content\"";
+				DEVELOPMENT_TEAM = GF8GF9C4W5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C794A6528DF37F2001AC1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GF8GF9C4W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallboxEMS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WallboxEMS";
+			};
+			name = Debug;
+		};
+		6C794A6628DF37F2001AC1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GF8GF9C4W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallboxEMS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WallboxEMS";
+			};
+			name = Release;
+		};
+		6C794A6828DF37F2001AC1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GF8GF9C4W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallboxEMS;
+			};
+			name = Debug;
+		};
+		6C794A6928DF37F2001AC1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GF8GF9C4W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallboxEMS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C794A3828DF37F1001AC1A3 /* Build configuration list for PBXProject "WallboxEMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C794A5F28DF37F2001AC1A3 /* Debug */,
+				6C794A6028DF37F2001AC1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C794A6128DF37F2001AC1A3 /* Build configuration list for PBXNativeTarget "WallboxEMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C794A6228DF37F2001AC1A3 /* Debug */,
+				6C794A6328DF37F2001AC1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C794A6428DF37F2001AC1A3 /* Build configuration list for PBXNativeTarget "WallboxEMSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C794A6528DF37F2001AC1A3 /* Debug */,
+				6C794A6628DF37F2001AC1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C794A6728DF37F2001AC1A3 /* Build configuration list for PBXNativeTarget "WallboxEMSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C794A6828DF37F2001AC1A3 /* Debug */,
+				6C794A6928DF37F2001AC1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C794A3528DF37F1001AC1A3 /* Project object */;
+}
