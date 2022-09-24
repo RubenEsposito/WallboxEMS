@@ -10,16 +10,16 @@ import Foundation
 struct HistoricalData: Codable {
     
     let buildingConsumption: kW
-    let powerFromGrid: kW
-    let powerFromSolarPanels: kW
-    let powerFromQuasars: kW
+    let gridPower: kW
+    let solarPower: kW
+    let quasarsPower: kW
     let timeStamp: String
     
     enum CodingKeys: String, CodingKey {
         case buildingConsumption = "building_active_power"
-        case powerFromGrid = "grid_active_power"
-        case powerFromSolarPanels = "pv_active_power"
-        case powerFromQuasars = "quasars_active_power"
+        case gridPower = "grid_active_power"
+        case solarPower = "pv_active_power"
+        case quasarsPower = "quasars_active_power"
         case timeStamp
     }
 }

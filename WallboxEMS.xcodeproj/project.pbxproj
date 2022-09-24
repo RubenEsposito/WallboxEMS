@@ -11,11 +11,12 @@
 		6C794A4328DF37F1001AC1A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A4228DF37F1001AC1A3 /* ContentView.swift */; };
 		6C794A4528DF37F2001AC1A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C794A4428DF37F2001AC1A3 /* Assets.xcassets */; };
 		6C794A4828DF37F2001AC1A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */; };
-		6C794A5228DF37F2001AC1A3 /* WallboxEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */; };
 		6C794A5C28DF37F2001AC1A3 /* WallboxEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */; };
 		6C794A5E28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */; };
 		6C8A9BAC28DF750100A2B382 /* HistoricalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAB28DF750100A2B382 /* HistoricalData.swift */; };
 		6C8A9BAE28DF750D00A2B382 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAD28DF750D00A2B382 /* LiveData.swift */; };
+		6C8A9BB028DF7A4D00A2B382 /* HistoricalDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAF28DF7A4D00A2B382 /* HistoricalDataTests.swift */; };
+		6C8A9BB328DF7DF000A2B382 /* LiveDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +43,13 @@
 		6C794A4428DF37F2001AC1A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C794A4D28DF37F2001AC1A3 /* WallboxEMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallboxEMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSTests.swift; sourceTree = "<group>"; };
 		6C794A5728DF37F2001AC1A3 /* WallboxEMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallboxEMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSUITests.swift; sourceTree = "<group>"; };
 		6C794A5D28DF37F2001AC1A3 /* WallboxEMSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6C8A9BAB28DF750100A2B382 /* HistoricalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalData.swift; sourceTree = "<group>"; };
 		6C8A9BAD28DF750D00A2B382 /* LiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
+		6C8A9BAF28DF7A4D00A2B382 /* HistoricalDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataTests.swift; sourceTree = "<group>"; };
+		6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +120,7 @@
 		6C794A5028DF37F2001AC1A3 /* WallboxEMSTests */ = {
 			isa = PBXGroup;
 			children = (
-				6C794A5128DF37F2001AC1A3 /* WallboxEMSTests.swift */,
+				6C8A9BB128DF7A6100A2B382 /* Model Tests */,
 			);
 			path = WallboxEMSTests;
 			sourceTree = "<group>";
@@ -139,6 +141,15 @@
 				6C8A9BAD28DF750D00A2B382 /* LiveData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6C8A9BB128DF7A6100A2B382 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6C8A9BAF28DF7A4D00A2B382 /* HistoricalDataTests.swift */,
+				6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */,
+			);
+			path = "Model Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 					};
 					6C794A4C28DF37F2001AC1A3 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 						TestTargetID = 6C794A3C28DF37F1001AC1A3;
 					};
 					6C794A5628DF37F2001AC1A3 = {
@@ -282,7 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C794A5228DF37F2001AC1A3 /* WallboxEMSTests.swift in Sources */,
+				6C8A9BB028DF7A4D00A2B382 /* HistoricalDataTests.swift in Sources */,
+				6C8A9BB328DF7DF000A2B382 /* LiveDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,15 +501,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GF8GF9C4W5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallboxEMS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WallboxEMS";
@@ -508,11 +528,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GF8GF9C4W5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RubenMarin.WallboxEMSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

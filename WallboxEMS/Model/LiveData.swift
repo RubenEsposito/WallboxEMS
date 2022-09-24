@@ -11,7 +11,7 @@ typealias kW = Double
 typealias kWh = Double
 typealias Percent = Double
 
-struct Live: Codable {
+struct LiveData: Codable {
     
     let buildingConsumption: kW
     let gridPower: kW
