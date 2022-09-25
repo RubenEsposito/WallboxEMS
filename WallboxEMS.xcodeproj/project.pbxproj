@@ -36,6 +36,8 @@
 		6C8A9BF228E07A7700A2B382 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF128E07A7700A2B382 /* DetailView.swift */; };
 		6C8A9BF428E08DC500A2B382 /* QuasarDischargedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF328E08DC500A2B382 /* QuasarDischargedWidget.swift */; };
 		6C8A9BF628E0900D00A2B382 /* QuasarChargedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF528E0900D00A2B382 /* QuasarChargedWidget.swift */; };
+		6C8A9BF828E0B10D00A2B382 /* ChartElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF728E0B10D00A2B382 /* ChartElement.swift */; };
+		6C8A9BFA28E0B14E00A2B382 /* ChartElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF928E0B14E00A2B382 /* ChartElementTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		6C8A9BF128E07A7700A2B382 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6C8A9BF328E08DC500A2B382 /* QuasarDischargedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuasarDischargedWidget.swift; sourceTree = "<group>"; };
 		6C8A9BF528E0900D00A2B382 /* QuasarChargedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuasarChargedWidget.swift; sourceTree = "<group>"; };
+		6C8A9BF728E0B10D00A2B382 /* ChartElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartElement.swift; sourceTree = "<group>"; };
+		6C8A9BF928E0B14E00A2B382 /* ChartElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartElementTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 			children = (
 				6C8A9BAB28DF750100A2B382 /* HistoricalData.swift */,
 				6C8A9BAD28DF750D00A2B382 /* LiveData.swift */,
+				6C8A9BF728E0B10D00A2B382 /* ChartElement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				6C8A9BAF28DF7A4D00A2B382 /* HistoricalDataTests.swift */,
 				6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */,
+				6C8A9BF928E0B14E00A2B382 /* ChartElementTests.swift */,
 			);
 			path = "Model Tests";
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 				6C8A9BBA28E04DAD00A2B382 /* GenericService.swift in Sources */,
 				6C8A9BAC28DF750100A2B382 /* HistoricalData.swift in Sources */,
 				6C8A9BF628E0900D00A2B382 /* QuasarChargedWidget.swift in Sources */,
+				6C8A9BF828E0B10D00A2B382 /* ChartElement.swift in Sources */,
 				6C8A9BE128E075D200A2B382 /* LiveDataServiceMock.swift in Sources */,
 				6C8A9BE228E075D200A2B382 /* HistoricalDataServiceMock.swift in Sources */,
 				6C8A9BE628E0772E00A2B382 /* LiveViewModel.swift in Sources */,
@@ -436,6 +443,7 @@
 				6C8A9BB028DF7A4D00A2B382 /* HistoricalDataTests.swift in Sources */,
 				6C8A9BB328DF7DF000A2B382 /* LiveDataTests.swift in Sources */,
 				6C8A9BC428E0609A00A2B382 /* LiveDataServiceTests.swift in Sources */,
+				6C8A9BFA28E0B14E00A2B382 /* ChartElementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

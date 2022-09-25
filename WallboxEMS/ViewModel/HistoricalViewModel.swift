@@ -8,29 +8,10 @@
 import Foundation
 import Combine
 
-enum EnergySourceType: String {
-    case grid = "Grid"
-    case solar = "Solar"
-    case quasar = "Quasar"
-    case buildingConsumption = "Building Consumption"
-}
-
 final class HistoricalViewModel: ObservableObject {
-    
-    struct Chart: Identifiable, Comparable {
-        let date: Date
-        let power: kW
-        let type: EnergySourceType
-        var id: Date { return date }
-        
-        static func <(lhs: Chart, rhs: Chart) -> Bool {
-            return lhs.id < rhs.id
-        }
-    }
     
     // MARK: - Properties
     private var historical: [HistoricalData] = []
-    
     
     // MARK: - Total statistics
     private var totalGrid: kW {
@@ -78,22 +59,22 @@ final class HistoricalViewModel: ObservableObject {
     var solarPercentageFormatted: String { return String(format: "%.1f", solarPercentage) }
     var quasarPercentageFormatted: String { return String(format: "%.1f", quasarPercentage) }
     
-    var charts: [Chart] {
+    var charts: [ChartElement] {
         let gridCharts = historical
-            .map { return Chart(date: $0.timestamp, power: $0.gridPower, type: .grid) }
+            .map { return ChartElement(date: $0.timestamp, power: $0.gridPower, type: .grid) }
             .sorted(by: { $0.date < $1.date })
         
         let solarCharts = historical
-            .map { return Chart(date: $0.timestamp, power: $0.solarPower, type: .solar) }
+            .map { return ChartElement(date: $0.timestamp, power: $0.solarPower, type: .solar) }
             .sorted(by: { $0.date < $1.date })
         
         // Invert the power from Quasar so it's easier to compare with the other power sources
         let quasarCharts = historical
-            .map { return Chart(date: $0.timestamp, power: -$0.quasarsPower, type: .quasar) }
+            .map { return ChartElement(date: $0.timestamp, power: -$0.quasarsPower, type: .quasar) }
             .sorted(by: { $0.date < $1.date })
         
         let buildingConsumptionCharts = historical
-            .map { return Chart(date: $0.timestamp, power: $0.gridPower + $0.solarPower - $0.quasarsPower, type: .buildingConsumption) }
+            .map { return ChartElement(date: $0.timestamp, power: $0.gridPower + $0.solarPower - $0.quasarsPower, type: .buildingConsumption) }
             .sorted(by: { $0.date < $1.date })
         
         return gridCharts + solarCharts + quasarCharts + buildingConsumptionCharts

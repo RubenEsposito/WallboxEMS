@@ -14,33 +14,51 @@ enum DashboardStatus {
     case error
 }
 
+enum EnergySourceType: String {
+    case grid = "Grid"
+    case solar = "Solar"
+    case quasar = "Quasar"
+    case buildingConsumption = "Building Consumption"
+}
+
 final class DashboardViewModel: ObservableObject {
-    
-    // MARK: - Properties
-    private var queue: DispatchQueue = .main
-    private var cancellables: [AnyCancellable] = []
-    private var liveService: LiveDataServiceProtocol
-    private var historicalService: HistoricalDataServiceProtocol
-    private var error: WallboxError?
-    private var energyCharged: kW {
-        didSet {
-            energyChargedFromQuasar = "\(String(format: "%.1f", abs(energyCharged))) kWh"
-        }
-    }
-    private var energyDischarged: kW {
-        didSet {
-            energyDischargedFromQuasar = "\(String(format: "%.1f", abs(energyDischarged))) kWh"
-        }
-    }
-    
-    var errorDescription: String { return error?.localizedDescription ?? "Something went wrong" }
     
     // MARK: - Published
     @Published var isError: Bool = false
     @Published var energyChargedFromQuasar: String = "kWh"
     @Published var energyDischargedFromQuasar: String = "kWh"
-    @Published var live: LiveData?
-    @Published var historical: [HistoricalData] = []
+    @Published var liveData: LiveData?
+    @Published var historicalData: [HistoricalData] = []
+    
+    // MARK: - Properties
+    
+    // Networking
+    var errorDescription: String { return error?.localizedDescription ?? "Something went wrong" }
+    private var cancellables: [AnyCancellable] = []
+    private var liveService: LiveDataServiceProtocol
+    private var historicalService: HistoricalDataServiceProtocol
+    private var error: WallboxError?
+    
+    // Quasar charged/discharged energy
+    private var energyCharged: kW {
+        didSet {
+            energyChargedFromQuasar = "\(String(format: "%.2f", abs(energyCharged))) kWh"
+        }
+    }
+    private var energyDischarged: kW {
+        didSet {
+            energyDischargedFromQuasar = "\(String(format: "%.2f", abs(energyDischarged))) kWh"
+        }
+    }
+    
+    // Live Data
+    var solar: String { return "\(String(format: "%.2f", liveData?.solarPower ?? 0.0)) kWh" }
+    var quasars: String { return "\(String(format: "%.2f", liveData?.quasarsPower ?? 0.0)) kWh" }
+    var grid: String { return "\(String(format: "%.2f", liveData?.gridPower ?? 0.0)) kWh" }
+    var demand: String { return "\(String(format: "%.2f", liveData?.buildingConsumption ?? 0.0)) kWh" }
+    
+    // Historical Data
+    
     
     // MARK: - Life cycle
     init(live: LiveDataServiceProtocol = LiveDataServiceMock(), historical: HistoricalDataServiceProtocol = HistoricalDataServiceMock()) {
@@ -55,9 +73,8 @@ final class DashboardViewModel: ObservableObject {
         cancellables.removeAll()
     }
     
-    // MARK: - Data
-    func refresh(on: DispatchQueue = DispatchQueue.main) {
-        self.queue = on
+    // MARK: - Interactor
+    func refresh() {
         fetchLive()
         fetchHistorical()
         self.isError = false
@@ -65,7 +82,7 @@ final class DashboardViewModel: ObservableObject {
     
     private func fetchLive() {
         liveService.fetchLive()
-            .receive(on: queue)
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 guard let self else { return }
                 switch completion {
@@ -77,13 +94,13 @@ final class DashboardViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] (response: LiveData) in
                 guard let self else { return }
-                self.live = response
+                self.liveData = response
             }.store(in: &cancellables)
     }
     
     private func fetchHistorical() {
         historicalService.fetchHistorical()
-            .receive(on: queue)
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 guard let self else { return }
                 switch completion {
@@ -94,12 +111,12 @@ final class DashboardViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] (response: [HistoricalData]) in
                 guard let self else { return }
-                self.historical = response
-                self.energyCharged = self.historical
+                self.historicalData = response
+                self.energyCharged = self.historicalData
                     .filter{ $0.quasarsPower >= 0 }
                     .map(\.quasarsPower)
                     .reduce(0, +)
-                self.energyDischarged = self.historical
+                self.energyDischarged = self.historicalData
                     .filter{ $0.quasarsPower < 0 }
                     .map(\.quasarsPower)
                     .reduce(0, +)
