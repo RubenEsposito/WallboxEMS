@@ -23,7 +23,6 @@ struct QuasarDischargedWidget: View {
 struct QuasarDischargedWidget_Previews: PreviewProvider {
     
     static var previews: some View {
-        QuasarDischargedWidget(viewModel: DashboardViewModel()
-        )
+        QuasarDischargedWidget(viewModel: DashboardViewModel())
     }
 }

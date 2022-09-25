@@ -18,7 +18,7 @@ struct DashboardView: View {
                     ScrollView{
                         QuasarDischargedWidget(viewModel: viewModel)
                         QuasarChargedWidget(viewModel: viewModel)
-                        LiveWidget(viewModel: LiveViewModel(live: viewModel.liveData))
+                        LiveWidget(viewModel: viewModel)
                         NavigationLink(destination: DetailView(viewModel: HistoricalViewModel(historical: viewModel.historicalData))) {
                             StatisticsWidget(viewModel: HistoricalViewModel(historical: viewModel.historicalData))
                         }

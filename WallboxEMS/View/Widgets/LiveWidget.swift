@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LiveWidget: View {
     
-    var viewModel: LiveViewModel
+    @StateObject var viewModel: DashboardViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8, content: {
@@ -48,16 +48,6 @@ struct LiveWidget: View {
 struct LiveWidget_Previews: PreviewProvider {
     
     static var previews: some View {
-        LiveWidget(viewModel: LiveViewModel(
-            live: LiveData(
-                buildingConsumption: 104.0,
-                gridPower: 24.0,
-                solarPower: 24.0,
-                quasarsPower: 24.0,
-                systemSoc: 23,
-                totalEnergy: 200,
-                currentEnergy: 123)
-            )
-        )
+        LiveWidget(viewModel: DashboardViewModel())
     }
 }

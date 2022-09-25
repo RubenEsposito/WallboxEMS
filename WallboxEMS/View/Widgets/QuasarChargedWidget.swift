@@ -23,7 +23,6 @@ struct QuasarChargedWidget: View {
 struct QuasarChargedWidget_Previews: PreviewProvider {
     
     static var previews: some View {
-        QuasarChargedWidget(viewModel: DashboardViewModel()
-        )
+        QuasarChargedWidget(viewModel: DashboardViewModel())
     }
 }
