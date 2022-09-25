@@ -29,7 +29,6 @@
 		6C8A9BDD28E0753E00A2B382 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BDC28E0753E00A2B382 /* DashboardViewModel.swift */; };
 		6C8A9BE128E075D200A2B382 /* LiveDataServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BDF28E075D200A2B382 /* LiveDataServiceMock.swift */; };
 		6C8A9BE228E075D200A2B382 /* HistoricalDataServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BE028E075D200A2B382 /* HistoricalDataServiceMock.swift */; };
-		6C8A9BE428E076CA00A2B382 /* HistoricalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BE328E076CA00A2B382 /* HistoricalViewModel.swift */; };
 		6C8A9BEB28E0782500A2B382 /* LiveWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BEA28E0782500A2B382 /* LiveWidget.swift */; };
 		6C8A9BED28E078C900A2B382 /* StatisticsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BEC28E078C900A2B382 /* StatisticsWidget.swift */; };
 		6C8A9BF228E07A7700A2B382 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF128E07A7700A2B382 /* DetailView.swift */; };
@@ -37,6 +36,7 @@
 		6C8A9BF628E0900D00A2B382 /* QuasarChargedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF528E0900D00A2B382 /* QuasarChargedWidget.swift */; };
 		6C8A9BF828E0B10D00A2B382 /* ChartElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF728E0B10D00A2B382 /* ChartElement.swift */; };
 		6C8A9BFA28E0B14E00A2B382 /* ChartElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BF928E0B14E00A2B382 /* ChartElementTests.swift */; };
+		6C8A9BFC28E0B5AC00A2B382 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BFB28E0B5AC00A2B382 /* DashboardViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		6C8A9BDC28E0753E00A2B382 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		6C8A9BDF28E075D200A2B382 /* LiveDataServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataServiceMock.swift; sourceTree = "<group>"; };
 		6C8A9BE028E075D200A2B382 /* HistoricalDataServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalDataServiceMock.swift; sourceTree = "<group>"; };
-		6C8A9BE328E076CA00A2B382 /* HistoricalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalViewModel.swift; sourceTree = "<group>"; };
 		6C8A9BEA28E0782500A2B382 /* LiveWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWidget.swift; sourceTree = "<group>"; };
 		6C8A9BEC28E078C900A2B382 /* StatisticsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsWidget.swift; sourceTree = "<group>"; };
 		6C8A9BF128E07A7700A2B382 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		6C8A9BF528E0900D00A2B382 /* QuasarChargedWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuasarChargedWidget.swift; sourceTree = "<group>"; };
 		6C8A9BF728E0B10D00A2B382 /* ChartElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartElement.swift; sourceTree = "<group>"; };
 		6C8A9BF928E0B14E00A2B382 /* ChartElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartElementTests.swift; sourceTree = "<group>"; };
+		6C8A9BFB28E0B5AC00A2B382 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				6C8A9BDC28E0753E00A2B382 /* DashboardViewModel.swift */,
-				6C8A9BE328E076CA00A2B382 /* HistoricalViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +256,7 @@
 		6C8A9BE828E077DA00A2B382 /* ViewModel Tests */ = {
 			isa = PBXGroup;
 			children = (
+				6C8A9BFB28E0B5AC00A2B382 /* DashboardViewModelTests.swift */,
 			);
 			path = "ViewModel Tests";
 			sourceTree = "<group>";
@@ -419,7 +419,6 @@
 				6C8A9BF828E0B10D00A2B382 /* ChartElement.swift in Sources */,
 				6C8A9BE128E075D200A2B382 /* LiveDataServiceMock.swift in Sources */,
 				6C8A9BE228E075D200A2B382 /* HistoricalDataServiceMock.swift in Sources */,
-				6C8A9BE428E076CA00A2B382 /* HistoricalViewModel.swift in Sources */,
 				6C8A9BB628DF838100A2B382 /* HistoricalDataService.swift in Sources */,
 				6C8A9BEB28E0782500A2B382 /* LiveWidget.swift in Sources */,
 				6C794A4128DF37F1001AC1A3 /* WallboxEMSApp.swift in Sources */,
@@ -438,6 +437,7 @@
 				6C8A9BC228E0608C00A2B382 /* HistoricalDataServiceTests.swift in Sources */,
 				6C8A9BB028DF7A4D00A2B382 /* HistoricalDataTests.swift in Sources */,
 				6C8A9BB328DF7DF000A2B382 /* LiveDataTests.swift in Sources */,
+				6C8A9BFC28E0B5AC00A2B382 /* DashboardViewModelTests.swift in Sources */,
 				6C8A9BC428E0609A00A2B382 /* LiveDataServiceTests.swift in Sources */,
 				6C8A9BFA28E0B14E00A2B382 /* ChartElementTests.swift in Sources */,
 			);

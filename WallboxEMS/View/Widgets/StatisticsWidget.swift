@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StatisticsWidget: View {
     
-    var viewModel: HistoricalViewModel
+    @StateObject var viewModel: DashboardViewModel
     
     var body: some View {
         ZStack {
@@ -47,12 +47,6 @@ struct StatisticsWidget: View {
 
 struct StatisticsWidget_Previews: PreviewProvider {
     static var previews: some View {
-        StatisticsWidget(viewModel: HistoricalViewModel(
-            historical: [HistoricalData(
-                buildingConsumption: 234,
-                gridPower: 134,
-                solarPower: 80,
-                quasarsPower: -20,
-                timestamp: ISO8601DateFormatter().date(from: "2021-09-27T15:48:00+00:00")!)]))
+        StatisticsWidget(viewModel: DashboardViewModel())
     }
 }

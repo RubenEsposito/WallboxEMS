@@ -57,8 +57,73 @@ final class DashboardViewModel: ObservableObject {
     var grid: String { return "\(String(format: "%.2f", liveData?.gridPower ?? 0.0)) kWh" }
     var demand: String { return "\(String(format: "%.2f", liveData?.buildingConsumption ?? 0.0)) kWh" }
     
-    // Historical Data
+    // Statistics Data
+    private var totalGrid: kW {
+        guard !historicalData.isEmpty else { return 0.0 }
+        return historicalData
+            .map { $0.gridPower }
+            .reduce(0, +)
+    }
+    private var totalSolar: kW {
+        guard !historicalData.isEmpty else { return 0.0 }
+        return historicalData
+            .map { $0.solarPower }
+            .reduce(0, +)
+    }
+    private var totalQuasar: kW {
+        guard !historicalData.isEmpty else { return 0.0 }
+        return historicalData
+            .map { $0.quasarsPower }
+            .reduce(0, +)
+    }
+    private var totalBuildingDemand: kW {
+        guard !historicalData.isEmpty else { return 0.0 }
+        return historicalData
+            .map { $0.buildingConsumption }
+            .reduce(0, +)
+    }
+    private var gridPercentage: Percent {
+        guard !historicalData.isEmpty else { return 0.0 }
+        return (totalGrid*100) / totalBuildingDemand
+    }
+    private var solarPercentage: Percent {
+        guard !historicalData.isEmpty else { return 0.0 }
+        return (totalSolar*100) / totalBuildingDemand
+    }
+    private var quasarPercentage: Percent {
+        guard !historicalData.isEmpty, totalQuasar < 0 else { return 0.0 }
+        return (abs(totalQuasar)*100) / totalBuildingDemand
+    }
     
+    var gridTitle: String { return "Grid" }
+    var solarTitle: String { return "Solar" }
+    var quasarTitle: String { return "Quasar" }
+    
+    var gridPercentageFormatted: String { return String(format: "%.1f", gridPercentage) }
+    var solarPercentageFormatted: String { return String(format: "%.1f", solarPercentage) }
+    var quasarPercentageFormatted: String { return String(format: "%.1f", quasarPercentage) }
+    
+    // Charts data
+    var charts: [ChartElement] {
+        let gridCharts = historicalData
+            .map { return ChartElement(date: $0.timestamp, power: $0.gridPower, type: .grid) }
+            .sorted(by: { $0.date < $1.date })
+        
+        let solarCharts = historicalData
+            .map { return ChartElement(date: $0.timestamp, power: $0.solarPower, type: .solar) }
+            .sorted(by: { $0.date < $1.date })
+        
+        // Invert the power from Quasar so it's easier to compare with the other power sources
+        let quasarCharts = historicalData
+            .map { return ChartElement(date: $0.timestamp, power: -$0.quasarsPower, type: .quasar) }
+            .sorted(by: { $0.date < $1.date })
+        
+        let buildingConsumptionCharts = historicalData
+            .map { return ChartElement(date: $0.timestamp, power: $0.buildingConsumption, type: .buildingConsumption) }
+            .sorted(by: { $0.date < $1.date })
+        
+        return gridCharts + solarCharts + quasarCharts + buildingConsumptionCharts
+    }
     
     // MARK: - Life cycle
     init(live: LiveDataServiceProtocol = LiveDataServiceMock(), historical: HistoricalDataServiceProtocol = HistoricalDataServiceMock()) {

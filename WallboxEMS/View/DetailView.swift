@@ -10,7 +10,7 @@ import Charts
 
 struct DetailView: View {
     
-    var viewModel: HistoricalViewModel
+    @StateObject var viewModel: DashboardViewModel
     
     var body: some View {
         List {
@@ -31,12 +31,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(viewModel: HistoricalViewModel(
-            historical: [HistoricalData(
-                buildingConsumption: 234,
-                gridPower: 134,
-                solarPower: 80,
-                quasarsPower: -20,
-                timestamp: ISO8601DateFormatter().date(from: "2021-09-27T15:48:00+00:00")!)]))
+        DetailView(viewModel: DashboardViewModel())
     }
 }
