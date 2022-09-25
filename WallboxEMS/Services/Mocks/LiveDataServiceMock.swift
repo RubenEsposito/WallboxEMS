@@ -7,11 +7,9 @@
 
 import Foundation
 import Combine
-@testable import WallboxEMS
 
-class LiveDataServiceMockUp: GenericService, LiveDataServiceProtocol {
-    
-    var shared: URLSession = URLSession(configuration: .default)
+class LiveDataServiceMock: GenericService, LiveDataServiceProtocol {
+    var urlSession: URLSession = URLSession(configuration: .default)
     var decoder: JSONDecoder = JSONDecoder()
     private let fileName = "live_data"
     

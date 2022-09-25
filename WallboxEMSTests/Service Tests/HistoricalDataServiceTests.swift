@@ -23,7 +23,7 @@ final class HistoricalDataServiceTests: XCTestCase {
     }
     
     func test_HistoricalDataServiceCall_ReturnsCorrectValues() throws {
-        let service: HistoricalDataServiceProtocol = HistoricalDataServiceMockUp()
+        let service: HistoricalDataServiceProtocol = HistoricalDataServiceMock()
         var historicalData: [HistoricalData] = []
         var error: Error?
         let expectation = self.expectation(description: "Returns correct values")

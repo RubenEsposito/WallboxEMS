@@ -32,7 +32,7 @@ enum WallboxError: Error {
 }
 
 protocol GenericService {
-    var shared: URLSession { get }
+    var urlSession: URLSession { get }
     var decoder: JSONDecoder { get }
     
     func fetch<T: Codable>(request: URLRequest) -> AnyPublisher<T, Error>
@@ -40,7 +40,7 @@ protocol GenericService {
 
 extension GenericService {
     func fetch<T: Codable>(request: URLRequest) -> AnyPublisher<T, Error> {
-        let publisher = shared.dataTaskPublisher(for:request)
+        let publisher = urlSession.dataTaskPublisher(for:request)
             .retry(1)
             .tryMap({ output in
                 guard let httpResponse = output.response as? HTTPURLResponse else {

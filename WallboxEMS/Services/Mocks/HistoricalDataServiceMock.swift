@@ -7,11 +7,9 @@
 
 import Foundation
 import Combine
-@testable import WallboxEMS
 
-class HistoricalDataServiceMockUp: GenericService, HistoricalDataServiceProtocol {
-    
-    var shared: URLSession = URLSession(configuration: .default)
+class HistoricalDataServiceMock: GenericService, HistoricalDataServiceProtocol {
+    var urlSession: URLSession = URLSession(configuration: .default)
     var decoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601

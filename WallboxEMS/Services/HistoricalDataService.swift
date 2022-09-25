@@ -13,7 +13,7 @@ protocol HistoricalDataServiceProtocol {
 }
 
 class HistoricalDataService: GenericService, HistoricalDataServiceProtocol {
-    var shared: URLSession = URLSession(configuration: .default)
+    var urlSession: URLSession = URLSession(configuration: .default)
     var decoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601

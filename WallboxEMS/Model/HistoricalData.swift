@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct HistoricalData: Codable {
+struct HistoricalData: Codable, Identifiable {
     
+    var id = UUID()
     let buildingConsumption: kW
     let gridPower: kW
     let solarPower: kW

@@ -23,7 +23,7 @@ final class LiveDataServiceTests: XCTestCase {
     }
     
     func test_LiveDataServiceCall_ReturnsCorrectValues() throws {
-        let service: LiveDataServiceProtocol = LiveDataServiceMockUp()
+        let service: LiveDataServiceProtocol = LiveDataServiceMock()
         var liveData: LiveData?
         var error: Error?
         let expectation = self.expectation(description: "Returns correct values")

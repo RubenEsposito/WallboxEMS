@@ -13,7 +13,7 @@ protocol LiveDataServiceProtocol {
 }
 
 class LiveDataService: GenericService, LiveDataServiceProtocol {
-    var shared: URLSession = URLSession(configuration: .default)
+    var urlSession: URLSession = URLSession(configuration: .default)
     var decoder: JSONDecoder = JSONDecoder()
     private let serviceName = "live_data"
     
