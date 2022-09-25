@@ -23,21 +23,28 @@ final class HistoricalDataServiceTests: XCTestCase {
     }
     
     func test_HistoricalDataServiceCall_ReturnsCorrectValues() throws {
-        let expectation = XCTestExpectation(description: "HistoricalDataServiceProtocol")
         let service: HistoricalDataServiceProtocol = HistoricalDataServiceMockUp()
         var historicalData: [HistoricalData] = []
+        var error: Error?
+        let expectation = self.expectation(description: "Returns correct values")
         
         service.fetchHistorical()
             .sink { completion in
-                guard case .finished = completion else { return }
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let encounteredError):
+                    error = encounteredError
+                }
                 expectation.fulfill()
             } receiveValue: { (value: [HistoricalData]) in
                 historicalData = value
                 expectation.fulfill()
             }
             .store(in: &cancellables)
-        wait(for: [expectation], timeout: 0.5)
+        waitForExpectations(timeout: 5)
         
+        XCTAssertNil(error)
         XCTAssertFalse(historicalData.isEmpty)
         XCTAssertEqual(historicalData.first!.buildingConsumption, 40.47342857142857)
         XCTAssertEqual(historicalData.first!.gridPower, 44.234380952380945)

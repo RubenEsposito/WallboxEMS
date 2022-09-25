@@ -23,22 +23,28 @@ final class LiveDataServiceTests: XCTestCase {
     }
     
     func test_LiveDataServiceCall_ReturnsCorrectValues() throws {
-        let expectation = XCTestExpectation(description: "LiveDataServiceProtocol")
         let service: LiveDataServiceProtocol = LiveDataServiceMockUp()
         var liveData: LiveData?
+        var error: Error?
+        let expectation = self.expectation(description: "Returns correct values")
         
         service.fetchLive()
             .sink { completion in
-                guard case .finished = completion else { return }
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let encounteredError):
+                    error = encounteredError
+                }
                 expectation.fulfill()
             } receiveValue: { (value: LiveData) in
                 liveData = value
                 expectation.fulfill()
             }
             .store(in: &cancellables)
-        wait(for: [expectation], timeout: 0.5)
+        waitForExpectations(timeout: 5)
         
-        XCTAssertNotNil(liveData)
+        XCTAssertNil(error)
         XCTAssertEqual(liveData!.solarPower, 7.827)
         XCTAssertEqual(liveData!.quasarsPower, -38.732)
         XCTAssertEqual(liveData!.gridPower, 80.475)
