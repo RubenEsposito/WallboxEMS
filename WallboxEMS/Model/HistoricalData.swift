@@ -13,13 +13,13 @@ struct HistoricalData: Codable {
     let gridPower: kW
     let solarPower: kW
     let quasarsPower: kW
-    let timeStamp: String
+    let timestamp: Date
     
     enum CodingKeys: String, CodingKey {
         case buildingConsumption = "building_active_power"
         case gridPower = "grid_active_power"
         case solarPower = "pv_active_power"
         case quasarsPower = "quasars_active_power"
-        case timeStamp
+        case timestamp
     }
 }

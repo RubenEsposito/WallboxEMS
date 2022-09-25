@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C794A4128DF37F1001AC1A3 /* WallboxEMSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */; };
-		6C794A4328DF37F1001AC1A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A4228DF37F1001AC1A3 /* ContentView.swift */; };
+		6C794A4328DF37F1001AC1A3 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A4228DF37F1001AC1A3 /* DashboardView.swift */; };
 		6C794A4528DF37F2001AC1A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C794A4428DF37F2001AC1A3 /* Assets.xcassets */; };
 		6C794A4828DF37F2001AC1A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */; };
 		6C794A5C28DF37F2001AC1A3 /* WallboxEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C794A5B28DF37F2001AC1A3 /* WallboxEMSUITests.swift */; };
@@ -17,6 +17,17 @@
 		6C8A9BAE28DF750D00A2B382 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAD28DF750D00A2B382 /* LiveData.swift */; };
 		6C8A9BB028DF7A4D00A2B382 /* HistoricalDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BAF28DF7A4D00A2B382 /* HistoricalDataTests.swift */; };
 		6C8A9BB328DF7DF000A2B382 /* LiveDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */; };
+		6C8A9BB628DF838100A2B382 /* HistoricalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BB528DF838100A2B382 /* HistoricalDataService.swift */; };
+		6C8A9BB828E04D8A00A2B382 /* LiveDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BB728E04D8A00A2B382 /* LiveDataService.swift */; };
+		6C8A9BBA28E04DAD00A2B382 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BB928E04DAD00A2B382 /* GenericService.swift */; };
+		6C8A9BC228E0608C00A2B382 /* HistoricalDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BC128E0608C00A2B382 /* HistoricalDataServiceTests.swift */; };
+		6C8A9BC428E0609A00A2B382 /* LiveDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BC328E0609A00A2B382 /* LiveDataServiceTests.swift */; };
+		6C8A9BC728E060D800A2B382 /* HistoricalDataServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BC628E060D800A2B382 /* HistoricalDataServiceMock.swift */; };
+		6C8A9BC928E060E500A2B382 /* LiveDataServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A9BC828E060E500A2B382 /* LiveDataServiceMock.swift */; };
+		6C8A9BD328E0638C00A2B382 /* historic_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8A9BD128E0638C00A2B382 /* historic_data.json */; };
+		6C8A9BD428E0638C00A2B382 /* historic_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8A9BD128E0638C00A2B382 /* historic_data.json */; };
+		6C8A9BD528E0638C00A2B382 /* live_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8A9BD228E0638C00A2B382 /* live_data.json */; };
+		6C8A9BD628E0638C00A2B382 /* live_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8A9BD228E0638C00A2B382 /* live_data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,7 @@
 /* Begin PBXFileReference section */
 		6C794A3D28DF37F1001AC1A3 /* WallboxEMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallboxEMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxEMSApp.swift; sourceTree = "<group>"; };
-		6C794A4228DF37F1001AC1A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C794A4228DF37F1001AC1A3 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		6C794A4428DF37F2001AC1A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C794A4728DF37F2001AC1A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C794A4D28DF37F2001AC1A3 /* WallboxEMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallboxEMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +61,15 @@
 		6C8A9BAD28DF750D00A2B382 /* LiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 		6C8A9BAF28DF7A4D00A2B382 /* HistoricalDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataTests.swift; sourceTree = "<group>"; };
 		6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataTests.swift; sourceTree = "<group>"; };
+		6C8A9BB528DF838100A2B382 /* HistoricalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataService.swift; sourceTree = "<group>"; };
+		6C8A9BB728E04D8A00A2B382 /* LiveDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataService.swift; sourceTree = "<group>"; };
+		6C8A9BB928E04DAD00A2B382 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		6C8A9BC128E0608C00A2B382 /* HistoricalDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataServiceTests.swift; sourceTree = "<group>"; };
+		6C8A9BC328E0609A00A2B382 /* LiveDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataServiceTests.swift; sourceTree = "<group>"; };
+		6C8A9BC628E060D800A2B382 /* HistoricalDataServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataServiceMock.swift; sourceTree = "<group>"; };
+		6C8A9BC828E060E500A2B382 /* LiveDataServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataServiceMock.swift; sourceTree = "<group>"; };
+		6C8A9BD128E0638C00A2B382 /* historic_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = historic_data.json; sourceTree = "<group>"; };
+		6C8A9BD228E0638C00A2B382 /* live_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = live_data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				6C794A4028DF37F1001AC1A3 /* WallboxEMSApp.swift */,
-				6C794A4228DF37F1001AC1A3 /* ContentView.swift */,
+				6C8A9BBB28E04FDF00A2B382 /* View */,
 				6C8A9BAA28DF746E00A2B382 /* Model */,
+				6C8A9BB428DF833700A2B382 /* Services */,
 				6C794A4428DF37F2001AC1A3 /* Assets.xcassets */,
+				6C8A9BD128E0638C00A2B382 /* historic_data.json */,
+				6C8A9BD228E0638C00A2B382 /* live_data.json */,
 				6C794A4628DF37F2001AC1A3 /* Preview Content */,
 			);
 			path = WallboxEMS;
@@ -120,6 +143,7 @@
 		6C794A5028DF37F2001AC1A3 /* WallboxEMSTests */ = {
 			isa = PBXGroup;
 			children = (
+				6C8A9BC028E0606800A2B382 /* Service Tests */,
 				6C8A9BB128DF7A6100A2B382 /* Model Tests */,
 			);
 			path = WallboxEMSTests;
@@ -150,6 +174,43 @@
 				6C8A9BB228DF7DF000A2B382 /* LiveDataTests.swift */,
 			);
 			path = "Model Tests";
+			sourceTree = "<group>";
+		};
+		6C8A9BB428DF833700A2B382 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C8A9BB928E04DAD00A2B382 /* GenericService.swift */,
+				6C8A9BB528DF838100A2B382 /* HistoricalDataService.swift */,
+				6C8A9BB728E04D8A00A2B382 /* LiveDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6C8A9BBB28E04FDF00A2B382 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C794A4228DF37F1001AC1A3 /* DashboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C8A9BC028E0606800A2B382 /* Service Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6C8A9BC528E060AD00A2B382 /* Mocks */,
+				6C8A9BC128E0608C00A2B382 /* HistoricalDataServiceTests.swift */,
+				6C8A9BC328E0609A00A2B382 /* LiveDataServiceTests.swift */,
+			);
+			path = "Service Tests";
+			sourceTree = "<group>";
+		};
+		6C8A9BC528E060AD00A2B382 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6C8A9BC628E060D800A2B382 /* HistoricalDataServiceMock.swift */,
+				6C8A9BC828E060E500A2B382 /* LiveDataServiceMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +318,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8A9BD328E0638C00A2B382 /* historic_data.json in Resources */,
 				6C794A4828DF37F2001AC1A3 /* Preview Assets.xcassets in Resources */,
 				6C794A4528DF37F2001AC1A3 /* Assets.xcassets in Resources */,
+				6C8A9BD528E0638C00A2B382 /* live_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8A9BD428E0638C00A2B382 /* historic_data.json in Resources */,
+				6C8A9BD628E0638C00A2B382 /* live_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C794A4328DF37F1001AC1A3 /* ContentView.swift in Sources */,
+				6C794A4328DF37F1001AC1A3 /* DashboardView.swift in Sources */,
+				6C8A9BB828E04D8A00A2B382 /* LiveDataService.swift in Sources */,
+				6C8A9BBA28E04DAD00A2B382 /* GenericService.swift in Sources */,
 				6C8A9BAC28DF750100A2B382 /* HistoricalData.swift in Sources */,
+				6C8A9BB628DF838100A2B382 /* HistoricalDataService.swift in Sources */,
 				6C794A4128DF37F1001AC1A3 /* WallboxEMSApp.swift in Sources */,
 				6C8A9BAE28DF750D00A2B382 /* LiveData.swift in Sources */,
 			);
@@ -294,8 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8A9BC728E060D800A2B382 /* HistoricalDataServiceMock.swift in Sources */,
+				6C8A9BC928E060E500A2B382 /* LiveDataServiceMock.swift in Sources */,
+				6C8A9BC228E0608C00A2B382 /* HistoricalDataServiceTests.swift in Sources */,
 				6C8A9BB028DF7A4D00A2B382 /* HistoricalDataTests.swift in Sources */,
 				6C8A9BB328DF7DF000A2B382 /* LiveDataTests.swift in Sources */,
+				6C8A9BC428E0609A00A2B382 /* LiveDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

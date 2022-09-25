@@ -25,13 +25,13 @@ final class HistoricalDataTests: XCTestCase {
                                                 gridPower: 10,
                                                 solarPower: 20,
                                                 quasarsPower: -20,
-                                                timeStamp: "19:50 Sep 24 2022")
+                                                timestamp: Date(timeIntervalSince1970: 0))
         
         XCTAssertNotNil(testHistoricalData)
         XCTAssertEqual(testHistoricalData.buildingConsumption, 100)
         XCTAssertEqual(testHistoricalData.gridPower, 10)
         XCTAssertEqual(testHistoricalData.solarPower, 20)
         XCTAssertEqual(testHistoricalData.quasarsPower, -20)
-        XCTAssertEqual(testHistoricalData.timeStamp, "19:50 Sep 24 2022")
+        XCTAssertEqual(testHistoricalData.timestamp, Date(timeIntervalSince1970: 0))
     }
 }

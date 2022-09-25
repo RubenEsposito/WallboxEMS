@@ -11,7 +11,7 @@ import SwiftUI
 struct WallboxEMSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
         }
     }
 }
