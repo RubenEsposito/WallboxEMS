@@ -18,21 +18,21 @@ final class DashboardViewModelTests: XCTestCase {
         buildingConsumption: 100.0,
         gridPower: 67.3,
         solarPower: 12.0,
-        quasarsPower: 34.0,
+        quasarsPower: -21.0,
         systemSoc: 34,
         totalEnergy: 200,
         currentEnergy: 12)
     
-    let historicalData1 = HistoricalData(buildingConsumption: 12.0,
-                                    gridPower: 34.0,
-                                    solarPower: 67.3,
-                                    quasarsPower: 100.0,
+    let historicalData1 = HistoricalData(buildingConsumption: 100.0,
+                                    gridPower: 40.0,
+                                    solarPower: 40.0,
+                                    quasarsPower: -20.0,
                                     timestamp: Date(timeIntervalSince1970: 0))
     
-    let historicalData2 = HistoricalData(buildingConsumption: 14.0,
-                                    gridPower: 36.0,
-                                    solarPower: 69.3,
-                                    quasarsPower: 102.0,
+    let historicalData2 = HistoricalData(buildingConsumption: 100.0,
+                                    gridPower: 20.0,
+                                    solarPower: 40.0,
+                                    quasarsPower: -40.0,
                                     timestamp: Date(timeIntervalSince1970: 10))
     
     override func setUpWithError() throws {
@@ -73,6 +73,14 @@ final class DashboardViewModelTests: XCTestCase {
         XCTAssertTrue(viewModel.charts.isEmpty)
     }
     
+    func test_Init_DashboardViewModel_QuasarInfo() {
+        XCTAssertEqual(viewModel.energyChargedFromQuasar, "kWh")
+        XCTAssertEqual(viewModel.energyDischargedFromQuasar, "kWh")
+        viewModel.liveData = liveData
+        XCTAssertEqual(viewModel.energyChargedFromQuasar, "kWh")
+        XCTAssertEqual(viewModel.energyDischargedFromQuasar, "kWh")
+    }
+    
     func test_Init_DashboardViewModel_LiveData() {
         XCTAssertEqual(viewModel.solar, "0.00 kWh")
         XCTAssertEqual(viewModel.quasars, "0.00 kWh")
@@ -80,7 +88,7 @@ final class DashboardViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.demand, "0.00 kWh")
         viewModel.liveData = liveData
         XCTAssertEqual(viewModel.solar, "12.00 kWh")
-        XCTAssertEqual(viewModel.quasars, "34.00 kWh")
+        XCTAssertEqual(viewModel.quasars, "-21.00 kWh")
         XCTAssertEqual(viewModel.grid, "67.30 kWh")
         XCTAssertEqual(viewModel.demand, "100.00 kWh")
     }
@@ -92,24 +100,24 @@ final class DashboardViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.gridPercentageFormatted, "0.0")
         XCTAssertEqual(viewModel.solarPercentageFormatted, "0.0")
         XCTAssertEqual(viewModel.quasarPercentageFormatted, "0.0")
-        viewModel.historicalData = [historicalData1, historicalData1]
-        XCTAssertEqual(viewModel.gridPercentageFormatted, "283.3")
-        XCTAssertEqual(viewModel.solarPercentageFormatted, "560.8")
-        XCTAssertEqual(viewModel.quasarPercentageFormatted, "0.0")
+        viewModel.historicalData = [historicalData1, historicalData2]
+        XCTAssertEqual(viewModel.gridPercentageFormatted, "30.0")
+        XCTAssertEqual(viewModel.solarPercentageFormatted, "40.0")
+        XCTAssertEqual(viewModel.quasarPercentageFormatted, "30.0")
     }
     
     func test_Init_DashboardViewModel_ChartsData() {
         XCTAssertTrue(viewModel.charts.isEmpty)
         viewModel.historicalData = [historicalData2, historicalData1]
         let charts = [
-            ChartElement(date: Date(timeIntervalSince1970: 0), power: 34.0, type: .grid),
-            ChartElement(date: Date(timeIntervalSince1970: 10), power: 36.0, type: .grid),
-            ChartElement(date: Date(timeIntervalSince1970: 0), power: 67.3, type: .solar),
-            ChartElement(date: Date(timeIntervalSince1970: 10), power: 69.3, type: .solar),
-            ChartElement(date: Date(timeIntervalSince1970: 0), power: -100.0, type: .quasar),
-            ChartElement(date: Date(timeIntervalSince1970: 10), power: -102.0, type: .quasar),
-            ChartElement(date: Date(timeIntervalSince1970: 0), power: 12.0, type: .buildingConsumption),
-            ChartElement(date: Date(timeIntervalSince1970: 10), power: 14.0, type: .buildingConsumption)
+            ChartElement(date: Date(timeIntervalSince1970: 0), power: 40.0, type: .grid),
+            ChartElement(date: Date(timeIntervalSince1970: 10), power: 20.0, type: .grid),
+            ChartElement(date: Date(timeIntervalSince1970: 0), power: 40.0, type: .solar),
+            ChartElement(date: Date(timeIntervalSince1970: 10), power: 40.0, type: .solar),
+            ChartElement(date: Date(timeIntervalSince1970: 0), power: 20.0, type: .quasar),
+            ChartElement(date: Date(timeIntervalSince1970: 10), power: 40.0, type: .quasar),
+            ChartElement(date: Date(timeIntervalSince1970: 0), power: 100.0, type: .buildingConsumption),
+            ChartElement(date: Date(timeIntervalSince1970: 10), power: 100.0, type: .buildingConsumption)
         ]
         XCTAssertEqual(viewModel.charts, charts)
     }

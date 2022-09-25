@@ -24,6 +24,7 @@ final class ChartElementTests: XCTestCase {
         let testChartElement = ChartElement(date: Date(timeIntervalSince1970: 0), power: 10, type: .solar)
         
         XCTAssertNotNil(testChartElement)
+        XCTAssertEqual(testChartElement.id, Date(timeIntervalSince1970: 0))
         XCTAssertEqual(testChartElement.date, Date(timeIntervalSince1970: 0))
         XCTAssertEqual(testChartElement.power, 10)
         XCTAssertEqual(testChartElement.type, .solar)
