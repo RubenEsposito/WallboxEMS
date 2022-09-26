@@ -161,6 +161,6 @@ Project Link: [https://github.com/RubenEsposito/WallboxEMS](https://github.com/R
 [contributors-shield]: https://img.shields.io/github/contributors/RubenEsposito/WallboxEMS.svg?style=for-the-badge
 [contributors-url]: https://github.com/RubenEsposito/WallboxEMS/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/RubenEsposito/WallboxEMS.svg?style=for-the-badge
-[license-url]: https://github.com/RubenEsposito/WallboxEMS/blob/master/LICENSE.txt
+[license-url]: https://github.com/RubenEsposito/WallboxEMS/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rubenexposito
