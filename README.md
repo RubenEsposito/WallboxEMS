@@ -28,17 +28,11 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/RubenEsposito/WallboxEMS">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">WallboxEMS</h3>
 
   <p align="center">
     Wallbox energy management system app for easy data visualization.
     <br />
-    <a href="https://github.com/RubenEsposito/WallboxEMS"><strong>Explore the docs »</strong></a>
   </p>
 </div>
 
@@ -72,12 +66,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is an exercise for the interview process at Wallbox. The aim of this code is showing my personal expertise on several aspects of iOS development, including:
+This project is an exercise for the interview process at Wallbox. The aim of this code is to show my personal expertise on several aspects of iOS development, including:
 
-- [ ] Architecture: I chose MVVM as the project architecture given it's suitable for small to medium size projects and enables reactive programming seamlessly.
-- [ ] SwiftUI/Combine are used in the app to allow the use of latest technologies from Apple (like Swift Charts) and reactive programming.
-- [ ] It follows SOLID and clean code principles, so for example in the networking layer protocols are used to uncouple the modules.
-- [ ] Testing: The XCTest cases implemeneted cover a big part of the code, making it safer to maintain and refactor, increasing it's quality.
+- Architecture: I chose MVVM as the project architecture given it's suitable for small to medium sized projects and enables reactive programming seamlessly.
+- SwiftUI/Combine are used in the app to allow the use of latest technologies from Apple (like Swift Charts) and reactive programming.
+- It follows SOLID code principles, so for example in the networking layer protocols are used to uncouple the modules.
+- Testing: The XCTest cases implemeneted cover a big part of the code, making it safer to maintain and refactor, increasing it's quality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,17 +80,16 @@ This project is an exercise for the interview process at Wallbox. The aim of thi
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps:
 
 ### Prerequisites
 
-- [ ] Xcode 14.0
-- [ ] Swift 5.7
+- Xcode 14.0
+- Swift 5.7
 
 ### Installation
 
-The project is packed so everything you need to do is clone the repository and run it.
+The project is prepared so everything you need to do is clone the repository, open the xcodeproj and run it.
 
 ### Tests
 
@@ -109,7 +102,7 @@ You can run the unit tests with Cmd + U.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-On the dashboard you will see the information from the EMS. If you tap on the Statistics, you will navigate to the detail view containing the charts.
+On the dashboard screen you will see the information from the EMS. If you tap on the Statistics view, you will navigate to the detail view containing the charts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,14 +113,14 @@ On the dashboard you will see the information from the EMS. If you tap on the St
 
 *By following the commits you can see the changes implied
 
-- [ ] I started thinking about the architecture. As the project has a limited scope and I want to use some reactive code and tests, I chose MVVM as it allows SOLID principles whit a limited code overload.
-- [ ] First, I created the models and its unit tests.
-- [ ] I also added the services, implementing protocols to keep the concrete implementations uncoupled and apply the dependency inversion principle.
-- [ ] I added the tests for the services. At this point I had to leave some of the tests (related to the fetch functions) to a later moment due to time constraints.
-- [ ] Then, with all the tests passing, I implemented the Views and ViewModels on top of the model and networking modules already created.
-- [ ] At this point, I saw that it was possible to optimize the view models and reduce them to one. I started by extracting the ChartElement as a separate model object and the EnergySourceType to the common view model.
-- [ ] Then I reduced the number of VMs to one. At that point, I saw that it was possible to improve this architecture by adding an extra layer. That would make it feel more like a MVVMC architecture (similar to VIPER but with MVVM naming), with an interactor dealing with networking code (fetch functions mainly). But again, due to the time constraints inherent to this kind of tests I couldn't complete the refactor.
-- [ ] Finally, I saw that I could improve the test coverage (from 70%) and implemented some new tests for the view models, incrementing it to 75%.
+- I started thinking about the architecture. As the project has a limited scope and I want to use some reactive code and tests, I chose MVVM as it allows SOLID principles with a limited code overload.
+- First, I created the models and its unit tests.
+- I also added the services, implementing protocols to keep the concrete implementations uncoupled and apply the dependency inversion principle.
+- I added the tests for the services. At this point I had to leave some of the tests (related to the fetch functions) to a later moment due to time constraints.
+- Then, with all the tests passing, I implemented the Views and ViewModels on top of the model and networking modules already created.
+- At this point, I saw that it was possible to optimize the view models and reduce them to one. I started by extracting the ChartElement as a separate model object and the EnergySourceType to the common view model.
+- Then I reduced the number of VMs to one. At that point, I saw that it was possible to improve this architecture by adding an extra layer. That would make it feel more like a MVVMC architecture (similar to VIPER but with MVVM naming), with an interactor dealing with networking code (fetch functions mainly). But again, due to the time constraints inherent to this kind of tests I couldn't complete the refactor.
+- Finally, I saw that I could improve the test coverage (from 70%) and implemented some new tests for the view models, incrementing it to 75%.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -157,7 +150,7 @@ Project Link: [https://github.com/RubenEsposito/WallboxEMS](https://github.com/R
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* You can check the exercise from this app [here](https://gitlab.com/carandahe/ems-demo-project):
+* You can check the exercise specs from this app [here](https://gitlab.com/carandahe/ems-demo-project).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
